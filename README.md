@@ -1,7 +1,7 @@
-# Tic Tac Toe in React JS
-- This repo contais the code for tic tac toe game in react js.
+# Tic Tac Toe Client
+This repo contais the code for a real-time tic-tac-toe web client, built using React.
 
-- You will find a repo for back end here : https://github.com/myvsparth/tic-tac-toe-server
+You will find a repo for back end here : https://github.com/simply-alliv/tic-tac-toe-client
 
 ## Output:
 
@@ -12,5 +12,3 @@
  npm install
  npm start
  ```
-
-Hurrey!!! Great Job.
