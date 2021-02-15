@@ -12,7 +12,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      endpoint: "http://localhost:4444",
+      endpoint: "https://tic-tac-toe-service.herokuapp.com/",
       socket: null,
       isGameStarted: false,
       gameId: null,
@@ -58,23 +58,23 @@ class App extends Component {
                   registrationConfirmation={this.registrationConfirmation}
                 />
               ) : (
-                <p>Loading...</p>
-              )}
+                  <p>Loading...</p>
+                )}
             </header>
           ) : (
-            <ShowUsers
-              socket={this.state.socket}
-              gameStartConfirmation={this.gameStartConfirmation}
-            />
-          )
+              <ShowUsers
+                socket={this.state.socket}
+                gameStartConfirmation={this.gameStartConfirmation}
+              />
+            )
         ) : (
-          <GamePlay
-            socket={this.state.socket}
-            gameId={this.state.gameId}
-            gameData={this.state.gameData}
-            opponentLeft={this.opponentLeft}
-          />
-        )}
+            <GamePlay
+              socket={this.state.socket}
+              gameId={this.state.gameId}
+              gameData={this.state.gameData}
+              opponentLeft={this.opponentLeft}
+            />
+          )}
       </Container>
     );
   }
